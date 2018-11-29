@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Archie's Web Portfolio</title>
+<meta charset="utf-8"/>
+   </head>
+
+<body>
+<script async src="./javascript/index.js">
+	</script>
+
+<h1>Archie's Web Portfolio</h1>
+<h4 id='date'></h4>
+
+<button type="button" onclick="change()">Click to Change Background</button>
+
+<script>
+function change() {
+    document.body.style.backgroundColor = "pink";
+}
+</script>
+
+<script type="text/javascript">
+
+function left() //moves image to the left
+
+{
+document.getElementById("img").style.top = '0px';
+document.getElementById("img").style.left = '0px';
+}
+
+</script>
+
+<script>
+     function addtextA(){
+         document.getElementById('displaytext').innerHTML='I am a junior at American High School in Fremont, California. I live with my parents and my little sister.';
+         }
+</script>
+
+      <div>
+  	<p>ABOUT ME (click to reveal!)</p>      
+	<img src="./images/me.jpg" width="400" height="400" alt="me" onclick='addtextA()'>
+	<br>
+        <span id='displaytext'></span>
+      </div>
+
+      <div>
+       <p>MY HOBBIES</p>        
+       <img src="./images/music.jpg" width="400" height="500" alt="music">
+	<p>I like to play viola and flute. I do community service. I take naps and watch Netflix in my free time.</p>
+      </div>
+
+   <div>
+	<p>MY FAVORITES</p>        
+	<img src="./images/naan.jpg" width="400" height="500" alt="naan">
+	 <p>My favorite food is naan. My favorite color is green. My favorite subject is math. My favorite season is summer.</p>
+   </div>
+
+      <div>
+        <p>WEBSITE INFO</p>
+	<img src="./images/code.jpg" width="400" height="350" alt="code">
+	 <p>This website is for Mr. Millard's 2018-19 Period 2 AP Computer Science class.</p>
+      </div>
+
+<style>
+DIV.movable { position:absolute; TOP:550px; LEFT:550px; }
+</style>
+
+<div id="img" class="movable"><img src="./images/ball.png"/></div <!image>
+
+<p> 
+<button type="button" onclick = "left()">Click to move ball</button> 
+</p>
+
+</body>
+</html>
